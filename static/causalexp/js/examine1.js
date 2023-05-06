@@ -7,19 +7,23 @@ var predictions = [];
 var sample_order = [];
 var mutation_prediction = [];
 //let scenarios = shuffle(['one','two']);
-let scenarios = shuffle(['one','two','three','four','five','six','seven','eight','nine','ten','eleven']);
-let frequency = shuffle(['1','2','3','4','5','6','7','8','9','10','11']);
+let scenarios = shuffle(['one','two','three','four','five','six']);
+let frequency = shuffle(['1','2','3','4','5','6']);
 let bgcolors = shuffle(['#f0ffff','#f0fff0','#f5f5dc','#e0ffff','#fffaf0','#f8f8ff','#fffafa','#f5f5f5','#f0f8ff','#ffe4e1','#d8bfd8']);
 let image_type = ["p", "notp", "q", "notq"];
 let img_combination = {
     'a': {'cause': 'p', 'effect': 'q'},
     'b': {'cause': 'p', 'effect': 'notq'},
+    'm1': {'cause': 'midp', 'effect': 'q'},
+    'm0': {'cause': 'midp', 'effect': 'notq'},
     'c': {'cause': 'notp', 'effect': 'q'},
     'd': {'cause': 'notp', 'effect': 'notq'}
 }
 let stim_dict = {
     'a': {'cause': 1, 'effect': 1},
     'b': {'cause': 1, 'effect': 0},
+    'm1': {'cause': 2, 'effect': 1},
+    'm0': {'cause': 2, 'effect': 0},
     'c': {'cause': 0, 'effect': 1},
     'd': {'cause': 0, 'effect': 0}
 }
@@ -84,7 +88,7 @@ function to_next_scenario_description(is_first_time=false) {
     }
     resetBackGround();
     document.getElementById('page').innerHTML = "<h4>"+ (sce_idx+1) + '/' + scenarios.length +"種類目</h4>";
-    document.getElementById('scenario_title').innerHTML = "<h2>被験者に" + test_order[scenarios[sce_idx]]['chemicals'] + "という薬を投与した時の実験記録</h2>";
+    document.getElementById('scenario_title').innerHTML = "<h2>" + test_order[scenarios[sce_idx]]['title'] + "</h2>";
     document.getElementById('check_sentence').style.display = "inline-block";
     document.getElementById('description_area').style.display = "inline-block";
     document.getElementById('start_scenario_button').setAttribute("disabled",true);
@@ -258,8 +262,8 @@ function draw_estimate(c) {
 
     document.getElementById('estimate_description').innerHTML = 
         '<p>' + test_order[scenarios[sce_idx]]['result'] + 'と思いますか？</p><br>' + 
-        '<p>0：' + test_order[scenarios[sce_idx]]['chemicals'] + 'という薬の投与は眠気を全く引き起こさない</p><br>' + 
-        '<p>100：' + test_order[scenarios[sce_idx]]['chemicals'] + 'という薬の投与は眠気を確実に引き起こす</p><br>' +
+        '<p>0：' + test_order[scenarios[sce_idx]]['min_result'] + '</p><br>' + 
+        '<p>100：' + test_order[scenarios[sce_idx]]['max_result'] + '</p><br>' +
         '<p>として、0から100の値で<b>直感的に</b>回答してください。</p><br>' +
         '<p>※スライダーをクリックしたままドラッグ&ドロップすると挙動がおかしくなる場合があります。その場合はスライダーを直接クリックして値を選択してください。</p><br>'
 }
