@@ -144,7 +144,7 @@ function to_next_sample() {
     const button1 = document.getElementById('next_sample');
     button1.disabled = true;
     if (current_test_page >= sample_size) {
-        alert('この病院の観察結果は以上になります。');
+        alert('観察結果は以上になります。');
         draw_estimate('fin');
         return;
     }
