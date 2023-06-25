@@ -1,28 +1,28 @@
 {    
     "one": {
-        "title": "新薬「A-57」の投与と、その後のストレスの観察結果",
+        "title": "新薬「A-57」の投与と、その後の瞬発力の観察結果",
         "descriptions": [
-            "新薬である「A-88」はストレスを低減させる効果があると考えられています。 ",
-            "被験者に「A-88」を投与し、その後の感じたストレスを調査する実験が行われました。これから、実験の観察結果が提示されます。",
-            "薬は「大量に投与した」「小量を投与した」「投与しなかった」の三段階、感じたストレスは「ストレスを感じた」「ストレスを感じなかった」の二段階で提示されます。",
+            "新薬である「A-88」は瞬発力を向上させる効果があると考えられています。 ",
+            "被験者に「A-88」を投与し、その後の瞬発力を調査する実験が行われました。これから、実験の観察結果が提示されます。",
+            "薬は「大量に投与した」「小量を投与した」「投与しなかった」の三段階、瞬発力は「高かった」「低かった」の二段階で提示されます。",
             "観察結果が確認できましたら、「次の事例へ」を押して次の観察結果を確認するという操作を繰り返してください。",
-            "全ての観察結果が表示されたら、「A-88」という薬を投与した量がストレスに与える影響を評価してもらいます。"
+            "全ての観察結果が表示されたら、「A-88」という薬を投与した量が瞬発力に与える影響を評価してもらいます。"
         ],
         "images": {
             "p": "static/causalexp/img/l_drug1.png",
             "midp": "static/causalexp/img/s_drug1.png",
             "notp": "static/causalexp/img/not_drug1.png",
-            "q": "static/causalexp/img/manzoku.png",
-            "notq": "static/causalexp/img/not_manzoku.png",
+            "q": "static/causalexp/img/good.png",
+            "notq": "static/causalexp/img/not_good.png",
             "arrow": "static/causalexp/img/yajirushi_right.png"
         },
         "sentences": {
-            "a": "大量の薬が投与された、ストレスを感じた",
-            "b": "大量の薬が投与された、ストレスを感じなかった",
-            "m1": "小量の薬が投与された、ストレスを感じた",
-            "m0": "小量の薬が投与された、ストレスを感じなかった",
-            "c": "薬は投与されなかった、ストレスを感じた",
-            "d": "薬は投与されなかった、ストレスを感じなかった"
+            "a": "大量の薬が投与された、瞬発力は高かった",
+            "b": "大量の薬が投与された、瞬発力は低かった",
+            "m1": "小量の薬が投与された、瞬発力は高かった",
+            "m0": "小量の薬が投与された、瞬発力は低かった",
+            "c": "薬は投与されなかった、瞬発力は高かった",
+            "d": "薬は投与されなかった、瞬発力は低かった"
         },
         "samples": {
             "1": {
@@ -82,9 +82,9 @@
                 "d": 1
             }
         },
-        "min_result": "薬を投与しても、ストレスに影響はない",
-        "max_result": "薬を投与すると、確実にストレスが低減される",
-        "result": "薬を投与する事は、その後感じるストレスにどのような影響を及ぼす"
+        "min_result": "薬を投与しても、瞬発力に影響はない",
+        "max_result": "薬を投与すると、確実に瞬発力が高くなる",
+        "result": "薬を投与する事は、その後の瞬発力にどのような影響を及ぼす"
     },
     "two": {
         "title": "新薬「B-23」の投与と、その後のストレスの観察結果",
@@ -99,8 +99,8 @@
             "p": "static/causalexp/img/l_drug2.png",
             "midp": "static/causalexp/img/s_drug2.png",
             "notp": "static/causalexp/img/not_drug2.png",
-            "q": "static/causalexp/img/plant_kare.png",
-            "notq": "static/causalexp/img/plant.png",
+            "q": "static/causalexp/img/sleep.png",
+            "notq": "static/causalexp/img/not_sleep.png",
             "arrow": "static/causalexp/img/yajirushi_right.png"
         },
         "sentences": {
@@ -186,8 +186,8 @@
             "p": "static/causalexp/img/l_drug3.png",
             "midp": "static/causalexp/img/s_drug3.png",
             "notp": "static/causalexp/img/not_drug3.png",
-            "q": "static/causalexp/img/plant_kare.png",
-            "notq": "static/causalexp/img/plant.png",
+            "q": "static/causalexp/img/good.png",
+            "notq": "static/causalexp/img/not_good.png",
             "arrow": "static/causalexp/img/yajirushi_right.png"
         },
         "sentences": {
@@ -273,8 +273,8 @@
             "p": "static/causalexp/img/l_drug4.png",
             "midp": "static/causalexp/img/s_drug4.png",
             "notp": "static/causalexp/img/not_drug4.png",
-            "q": "static/causalexp/img/stress.png",
-            "notq": "static/causalexp/img/not_stress.png",
+            "q": "static/causalexp/img/good.png",
+            "notq": "static/causalexp/img/not_good.png",
             "arrow": "static/causalexp/img/yajirushi_right.png"
         },
         "sentences": {
@@ -360,8 +360,8 @@
             "p": "static/causalexp/img/l_drug5.png",
             "midp": "static/causalexp/img/s_drug5.png",
             "notp": "static/causalexp/img/not_drug5.png",
-            "q": "static/causalexp/img/man_manzoku.png",
-            "notq": "static/causalexp/img/man_not_manzoku.png",
+            "q": "static/causalexp/img/ohayou.png",
+            "notq": "static/causalexp/img/not_ohayou.png",
             "arrow": "static/causalexp/img/yajirushi_right.png"
         },
         "sentences": {
@@ -447,8 +447,8 @@
             "p": "static/causalexp/img/l_drug6.png",
             "midp": "static/causalexp/img/s_drug6.png",
             "notp": "static/causalexp/img/not_drug6.png",
-            "q": "static/causalexp/img/manzoku.png",
-            "notq": "static/causalexp/img/not_manzoku.png",
+            "q": "static/causalexp/img/good.png",
+            "notq": "static/causalexp/img/not_good.png",
             "arrow": "static/causalexp/img/yajirushi_right.png"
         },
         "sentences": {
