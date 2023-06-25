@@ -144,7 +144,7 @@ function to_next_sample() {
     const button1 = document.getElementById('next_sample');
     button1.disabled = true;
     if (current_test_page >= sample_size) {
-        alert('この病院の観察結果は以上になります。');
+        alert('観察結果は以上になります。');
         draw_estimate('fin');
         return;
     }
@@ -265,7 +265,7 @@ function draw_estimate(c) {
         '<p>0：' + test_order[scenarios[sce_idx]]['min_result'] + '</p><br>' + 
         '<p>100：' + test_order[scenarios[sce_idx]]['max_result'] + '</p><br>' +
         '<p>として、0から100の値で<b>直感的に</b>回答してください。</p><br>' +
-        '<p>※スライダーをクリックしたままドラッグ&ドロップすると挙動がおかしくなる場合があります。その場合はスライダーを直接クリックして値を選択してください。</p><br>'
+        '<p>※スライダーの挙動がおかしくなった場合、スライダーを直接クリックして値を選択してください。</p><br>'
 }
 
 // 因果関係の強さの推定値を取得する
