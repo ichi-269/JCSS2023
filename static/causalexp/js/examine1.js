@@ -52,6 +52,10 @@ window.onload = function() {
     to_next_scenario_description(is_first_time=true);
 }
 
+window.onbeforeunload = function(e) {
+    e.returnValue = "ページを離れると、これまで入力した内容は全て破棄されます。ページを離れてもよろしいですか？";
+}
+
 function read_json(filename) {
     var json = $.ajax({
         type: 'GET',

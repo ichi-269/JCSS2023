@@ -121,8 +121,8 @@
         </div>
         <button id="next_scenario" style="display:none; cursor: hand; cursor:pointer;" disabled
             onclick="get_value();to_next_scenario_description()">次のシナリオへ進む</button>
-        <button id="finish_all_scenarios" style="display:none; cursor: hand; cursor:pointer;" disabled
-            onclick="get_value_fin()">回答を終了する</button>
+            <button id="finish_all_scenarios" style="display:none; cursor: hand; cursor:pointer;" disabled
+            onclick="window.onbeforeunload = null; get_value_fin();">回答を終了する</button>
 
         <button id="continue_scenario" style="display:inline-grid; cursor: hand; cursor:pointer;" disabled 
             onclick="get_value();showStimulation()">シナリオを続ける</button>
